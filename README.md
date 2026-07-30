@@ -27,8 +27,13 @@ results appear which is the day you were born in and your Akan name.
 3.Javascript
 
 # Getting started
-clone your file 
-open the editor
+Create a repository file in your github account
+Copy the link and clone it in your terminal
+Create the Akan-name-generator folder in your terminal
+Create index.html,style.css and script.js files within the folder
+Add the files and commit them
+Open VS code using your terminal
+Now you can work on your website
 
 # License
 MIT License
