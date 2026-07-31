@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="main-section">
+        <h1>AKAN NAME GENERATOR</h1>
+
+        <P>Discover your Akan name based on which day you were born<br>
+            and ther are different names for each gender for each day that the person<br>
+            was born.Fill in the date,month and year of your birth on the space provided<br>
+            then click the submit button below to see your Akan name from the Ghanian culture.
+
+        </P>
+    </section>
+    <section id="form">
+        <h2>Enter your birthday</h2>
+        <div id="inputs">
+            <form id="names">
+                <div class="day">
+                    <label>Day</label>
+                    <input type="number" id="day" min="1" max="31">
+                </div>
+
+                
+                <div class="day">
+                    <label>Month</label>
+                    <input type="number" id="month" min="1" max="12">
+                </div>
+
+
+                <div class="day">
+                    <label>Year</label>
+                    <input type="number" id="year">
+                </div>
+
+
+                <div class="gender">
+                    <label>Gender</label>
+
+                    <div class="gender">
+                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                    </div>
+                </div>
+
+
+                <div class="button">
+                    <button type="submit">Generate Akan Name</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="name">
+        <h2>Akan name</h2>
+        <div id="output" class="result-card" aria-live="polite">your results will appear here</div>
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
