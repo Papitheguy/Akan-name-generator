@@ -36,7 +36,7 @@ form.addEventListener("submit", function (e) {
     const gender = document.querySelector('input[name="gender"]:checked').value;
 
 
-    if  ((day < 1 || day > 31) || (month < 1 || month > 12) || isNaN(year)){
+    if  ((day < 1 || day > 31) || (month < 1 || month > 12) || (year < 1000 || year > 2060)){
         output .innerHTML = "please fill in your correct birthday";
         return;
     }
