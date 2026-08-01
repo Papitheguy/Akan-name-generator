@@ -94,10 +94,9 @@ form.addEventListener("submit", function (e) {
     }
     
 
-     output.innerHTML =
-
-    `You were born on a ${weekdays[weekday]}'
-    '<h3>Your Akan name is ${akanName}.</h3>`;
+  output.innerHTML = 
+  `Your Akan name is: <strong>${akanName}</strong>
+   and you were born on a <strong>${weekdays[weekday]}</strong>.`;   
 
 
 });
