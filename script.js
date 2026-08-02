@@ -33,7 +33,7 @@ form.addEventListener("submit", function (e) {
     const year = parseInt(document.getElementById("year").value);
 
 
-    let gender = document.querySelector('input[name="gender"]:checked');
+    const gender = document.querySelector('input[name="gender"]:checked').value;
 
 
     if  ((day < 1 || day > 31) || (month < 1 || month > 12) || (year < 1000 || year > 2060)){
@@ -61,10 +61,10 @@ form.addEventListener("submit", function (e) {
     let YY = year%100;
 
     //formula
-    let weekday = Math.floor(
-        ((CC/4) - 2*CC - 1) 
-        + (5*YY/4) 
-        + (26*(month+1)/10)
+    let weekday = (
+        Math.floor((CC/4) - 2*CC - 1) 
+        + Math.floor((5*YY/4)) 
+        + Math.floor((26*(month+1)/10))
         + day
     )%7
 
@@ -75,13 +75,13 @@ form.addEventListener("submit", function (e) {
 
     //weekdays
     const weekdays = [
-        "sunday",
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday"
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
     ];
 
 
