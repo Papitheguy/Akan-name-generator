@@ -33,7 +33,7 @@ form.addEventListener("submit", function (e) {
     const year = parseInt(document.getElementById("year").value);
 
 
-    const gender = document.querySelector('input[name="gender"]:checked').value;
+    let gender = document.querySelector('input[name="gender"]:checked');
 
 
     if  ((day < 1 || day > 31) || (month < 1 || month > 12) || (year < 1000 || year > 2060)){
@@ -94,10 +94,11 @@ form.addEventListener("submit", function (e) {
     }
     
 
-  output.innerHTML = 
-  `<h3>Your Akan name is: <strong>${akanName}</strong><h3>`
-  `<h3>You were born on a <strong>${weekdays[weekday]}</strong><h3>`;   
-
+  output.innerHTML = `
+        <h3>Your Akan Name</h3>
+        <p>You were born on <strong>${weekdays[weekday]}</strong>.</p>
+        <p>Your Akan name is <strong>${akanName}</strong>.</p>
+    `;
 
 });
 
